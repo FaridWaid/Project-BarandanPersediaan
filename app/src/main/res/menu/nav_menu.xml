@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_utama"
+            android:title="Menu Utama"
+            android:icon="@drawable/ic_home" />
+
+    </group>
+
+    <item android:title="Menu" >
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/barang"
+                    android:title="Barang"
+                    android:icon="@drawable/ic_barang" />
+
+                <item
+                    android:id="@+id/dokumen"
+                    android:title="Dokumen"
+                    android:icon="@drawable/ic_document" />
+
+                <item
+                    android:id="@+id/biaya"
+                    android:title="Biaya"
+                    android:icon="@drawable/ic_price" />
+
+                <item
+                    android:id="@+id/laporan"
+                    android:title="Laporan"
+                    android:icon="@drawable/ic_grafik" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Tambah Data" >
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/pemasok"
+                    android:title="Pemasok"
+                    android:icon="@drawable/ic_pemasok" />
+
+                <item
+                    android:id="@+id/pelanggan"
+                    android:title="Pelanggan"
+                    android:icon="@drawable/ic_pelanggan" />
+
+                <item
+                    android:id="@+id/toko"
+                    android:title="Toko"
+                    android:icon="@drawable/ic_toko" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Pengaturan" >
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/pengaturan"
+                    android:title="Pengaturan"
+                    android:icon="@drawable/ic_settings" />
+
+                <item
+                    android:id="@+id/pertanyaan"
+                    android:title="Pertanyaan atau Saran"
+                    android:icon="@drawable/ic_comment" />
+
+                <item
+                    android:id="@+id/bantuan"
+                    android:title="Bantuan"
+                    android:icon="@drawable/ic_bantuan" />
+
+                <item
+                    android:id="@+id/fitur"
+                    android:title="Fitur Baru"
+                    android:icon="@drawable/ic_fitur" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -10,6 +10,50 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarangDanPersediaan">
         <activity
+            android:name=".activity.DaftarTransaksiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.PemindaiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.PerusahaanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.KuantitasMinimumActivity"
+            android:exported="true"
+            android:label="@string/title_activity_kuantitas_minimum"
+            android:theme="@style/Theme.BarangDanPersediaan.NoActionBar" />
+        <activity
+            android:name=".activity.ImpordanExporActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.PropertiBarangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TampilkanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UmumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TambahTokoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TambahPemasokActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.BarangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TokoTujuanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TambahItemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TambahGrupActivity"
+            android:exported="true" />
+        <activity
             android:name=".activity.UserActivity"
             android:exported="true" />
         <activity

@@ -22,9 +22,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.hide()
+
         val dataViewPager: ViewPager2 = findViewById(R.id.view_pager)
         val indicator: CircleIndicator3 = findViewById(R.id.indicator)
         val nextButton: ImageView = findViewById(R.id.nextButton)
+        val skipButton: ImageView = findViewById(R.id.skipButton)
 
         val listData1 = DataViewPager()
         listData1.text1 = "Selamat datang!\n Silahkan, ikuti panduan ini untuk memulai dengan cepat.\n\n Anda dapat mengubah parameter apa pun nanti di 'Pengaturan' "
@@ -76,7 +79,6 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = ViewPagerAdapter(arrayData)
         dataViewPager.adapter = adapter
-
         dataViewPager.offscreenPageLimit = 3
         dataViewPager.getChildAt(0)
         dataViewPager.overScrollMode = RecyclerView.OVER_SCROLL_NEVER
@@ -91,20 +93,21 @@ class MainActivity : AppCompatActivity() {
                 // Pindah ke LoginActivity
                 Intent(applicationContext, UserActivity::class.java).also {
                     startActivity(it)
+                    overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
                     finish()
                 }
             }
         }
 
-        // Ketika "textSkipIntro" diklik akan pindah activity ke LoginActivity
+        // Ketika "skipButton" diklik akan pindah activity ke UserActivity
         // overridePendingTransition digunakan untuk animasi dari intent
-//        textSkipIntro.setOnClickListener {
-//            Intent(applicationContext, LoginActivity::class.java).also {
-//                startActivity(it)
-//                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
-//                finish()
-//            }
-//        }
+        skipButton.setOnClickListener {
+            Intent(applicationContext, UserActivity::class.java).also {
+                startActivity(it)
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
+                finish()
+            }
+        }
 
         indicator.setViewPager(dataViewPager)
 

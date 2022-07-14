@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="primary">#0e9594</color>
+    <color name="second_primary">#096e6d</color>
     <color name="card_background">#FFFFFF</color>
     <color name="color_text">#FFF</color>
     <color name="primary_text">#565B65</color>
@@ -9,4 +10,7 @@
     <color name="black">#000</color>
     <color name="accent_color">#252C4B</color>
     <color name="dark_Red">#FFCC0000</color>
+    <color name="yellow">#FAEA48</color>
+    <color name="purple">#610C63</color>
+    <color name="background">#FFFFFF</color>
 </resources>

@@ -9,4 +9,7 @@
     <color name="black">#000</color>
     <color name="accent_color">#252C4B</color>
     <color name="dark_Red">#FFCC0000</color>
+    <color name="yellow">#FAEA48</color>
+    <color name="purple">#610C63</color>
+    <color name="background">#FFFFFF</color>
 </resources>

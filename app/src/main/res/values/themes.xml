@@ -1,7 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.BarangDanPersediaan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.BarangDanPersediaan" parent="Theme.MaterialComponents.DayNight">
         <item name="colorPrimary">@color/primary</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/card_background</item>
     </style>
+
+    <style name="Theme.BarangDanPersediaan.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.BarangDanPersediaan.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BarangDanPersediaan.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

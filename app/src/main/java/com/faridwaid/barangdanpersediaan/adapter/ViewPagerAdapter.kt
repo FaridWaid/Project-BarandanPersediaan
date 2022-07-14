@@ -15,7 +15,7 @@ import com.squareup.picasso.Picasso
 
 class ViewPagerAdapter (private val listData: List<DataViewPager>): RecyclerView.Adapter<ViewPagerAdapter.DataViewHolder>() {
 
-    // Membuat class PostViewHolder yang digunakan untuk set view yang akan ditampilkan,
+    // Membuat class DataViewHolder yang digunakan untuk set view yang akan ditampilkan,
     inner class DataViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val textView1: TextView = itemView.findViewById(R.id.textView1)
         val textView2: TextView = itemView.findViewById(R.id.textView2)
